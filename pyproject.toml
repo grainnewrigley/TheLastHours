@@ -11,5 +11,17 @@ dependencies = [
     "selenium",
     "networkx",
     "numpy",
-    "webdriver_manager.chrome"
+    "webdriver_manager",
+    "pyvis"
 ]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+
+[tool.hatch.build.targets.wheel]
+packages=["src/thelasthours"]
